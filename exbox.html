@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Making box</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  #zz{height:25px;}
+ </style>
+ <script>
+ function changer(self){
+ var target = document.querySelector('body');
+ if (self.value === 'green'){
+ target.style.backgroundColor='green';
+ target.style.color='white';
+ self.value ='yellow';
+
+ var alist = document.querySelectorAll('a');
+ var i = 0;
+ while(i<alist.length){
+ alist[i].style.color = 'powderblue';
+ i = i + 1; }}
+
+ else{target.style.backgroundColor='yellow';
+ target.style.color='black';
+ self.value = 'green'
+
+var alist = document.querySelectorAll('a');
+ var i = 0;
+ while(i<alist.length){
+ alist[i].style.color = 'black';
+ i = i + 1;}} }
+ </script>
+  </head>
+  <body>
+
+    <h1><a id="main" href="exbox.html"> South Korean job losses hit 22-year <br>high amid pandemic</a></h1>
+    <div id="grid">
+    <div><ol><h2>
+    <li><a href="https://unsplash.com/" target="_blank">Photos</a></li>
+    <li><a href="https://youtube.com/" target="_blank">video</a></li>
+    <li><a href="https://facebook.com/" target="_blank">communication</a></li>
+    <a href="index.html"><font color=brown;>Back</font></a>
+    <input id="zz" class="cc" type = "button" value="green" onclick="
+    changer(this);">
+  </h2></ol></div>
+
+  <div id="article"><p><h3> Economy suffered </h3></p>
+    <p style="margin-top:30px;">South Korea’s economy last year  <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=suffered&oquery=%EC%98%81%EC%96%B4+%EC%8B%A0%EB%AC%B8&tqi=U%2F9lJlp0YiRssPat%2BblssssstBR-404944"target="_blank">suffered</a> its worst year for job losses in 22 years, as companies of all sizes struggled to keep employees in the face of the prolonged pandemic, data showed Wednesday.
+According to Statistics Korea, the number of employed people here came to 26.9 million last year, down 218,000 from a year earlier, as hotels and restaurants slashed employment. The largest annual job loss on record was 1.27 million jobs in 1998, when the 1997-98 Asian financial crisis took a harsh toll on the country’s economy.
+“In light of the pandemic’s lingering impact on the job market and the base effect, the labor market is expected to remain sluggish until February,” Finance Minister Hong Nam-ki said at a government meeting on the economy.</p></div>
+</div>
+  </body>
+</html>

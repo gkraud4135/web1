@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+  #home{width:100px;
+        height:100px;}
+  div{}
+  .cc{width:50px;
+      height:50px;
+      margin:0px;
+}
+  .a{      display:grid;
+      	grid-template-columns:110px 1fr;}
+    </style>
+  </head>
+
+  <body>
+
+  <div class="a">
+  <div>
+  <input class="dd" id="home" type = "button" value="home" onclick="">
+  </div>
+  <div>
+  <div><input class="cc" type = "button" value="reset" onclick=
+  "document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';">
+  <input class="cc" type = "button" value="pink" onclick=
+  "document.querySelector('body').style.backgroundColor='pink';
+  document.querySelector('body').style.color='black';"></div>
+  <div><input class="cc" type = "button" value="black" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';">
+  <input id="zz" class="cc" type = "button" value="green" onclick="
+  var target = document.querySelector('body');
+  if (this.value === 'green'){
+  target.style.backgroundColor='green';
+  target.style.color='white';
+  this.value ='yellow';}
+  else{target.style.backgroundColor='yellow';
+  target.style.color='black';
+  this.value = 'green'}"></div></div>
+  </div>
+  <input type = "text" onchange="alert('changed')">
+  <input type = "text" onkeydown="alert('key down')">
+  <a href="index.html"><font color=brown;>Back</font></a>
+<h1>1&lt;2</h1>
+ <script>
+  document.write(1+1);
+  document.write(3>1);
+ </script>
+ <script>
+ var color = ["red","blue","green","yellow"];
+ color.push('white','black');
+ document.write(color[0]);
+ document.write(color.length);
+ </script>
+<script>
+  var named = ['lee','kim','park','song'];
+</script>
+ <ul>
+ <script>
+  var i = 0;
+  while(i<named.length){
+  document.write('<li>'+named[i]+'</li>');
+  i = i + 1; }
+  function sum(left,right){
+  return left+right;
+}document.write(sum(2,3));
+ document.write('<div style ="color:red">'+sum(2,3)+'</div>')
+
+ </script>
+  </ul>
+  <script>
+    var cowerkers = {"disigner":"lee","programmer":"park"};
+    cowerkers.bookeepers = "ji";
+    for(var key in cowerkers){
+      document.write(key+'<br>');
+      document.write(cowerkers[key]+'<br>');
+    }
+  </script>
+  <script>
+    cowerkers.showAll = function(){
+      for(var key in this){
+        document.write(key+':'+this[key]+'<br>')
+      }
+    }
+    cowerkers.showAll();
+  </script>
+</body>
+</html>
