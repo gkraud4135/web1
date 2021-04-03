@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+     *{height: 2000px;}
+        #wrap{
+        position:relative;
+        width: 300px;
+        height: 300px;
+        border: 1px solid gray;
+        }
+        
+        .box{
+            position: absolute;
+            width:50px;
+            height:50px;
+            background-color: indigo;
+        }
+      
+        #crd1{/*왼쪽 상단*/
+            top:0; left: 0;
+            table-layout: fixed;
+            }
+        #crd2{top:0; right: 0;}/*오른쪽 상단*/
+        #crd3{bottom:0; right: 0;}/*오른쪽 아래 하단*/
+        #crd4{bottom:0; left: 0;}/*왼쪽 아래 하단*/
+        #crd5{bottom:100px; left: 100px; caption-side: top;}/*정 가운데*/
+
+        #fixbox{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            top: 0px;
+            right: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <section>
+        <div id="wrap">
+        <div class="box" id="crd1">box11111</div>
+        <div class="box" id="crd2">box2</div>
+        <div class="box" id="crd3">box3</div>
+        <div class="box" id="crd4">box4</div>
+        <div class="box" id="crd5">box5</div>
+        </div>
+    </section>
+    <div id="fixbox">fixbox</div>
+    <caption>ddd</caption>
+</body>
+</html>
